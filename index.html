@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Processing Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="ico">
+</head>
+<body>
+
+    <header>
+        <a href="https://i.pinimg.com/736x/f4/ce/3d/f4ce3d025a0d1083fa1fe223db773699.jpg" class="logo">Internal Audit</a>
+        <input id="checkbox" type="checkbox">
+        <label class="toggle" for="checkbox">
+            <div id="bar1" class="bars"></div>
+            <div id="bar2" class="bars"></div>
+            <div id="bar3" class="bars"></div>
+        </label>      
+        <nav>
+            <ul>
+                <li><a href="#development-support">Home</a></li>
+                <li><a href="#data-processing">Data Processing</a></li>
+                <li><a href="#pengolahan-anomali">Pengolahan Anomali</a></li>
+                <li><a href="#contact">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="development-support">
+            <h2>Development & Support Internal Audit</h2>
+            <p>Aplikasi proses yang bertujuan untuk mengembangkan kapasitas dan kapabilitas tim audit internal, serta memberikan dukungan berkelanjutan dalam pelaksanaan audit. Hal ini mencakup pengembangan kompetensi auditor, peningkatan metodologi audit, pengembangan teknologi, dan pemberian sumber daya yang diperlukan untuk melakukan audit secara efektif dan efisien. Ini juga termasuk pengembangan standar dan prosedur audit, kebijakan audit, serta pengembangan alat bantu dan sistem yang mendukung aktivitas dan efisiensi audit. Dengan adanya pengembangan dan dukungan ini, audit internal diharapkan dapat memberikan nilai tambah yang lebih besar dalam membantu organisasi mencapai tujuan dan kepatuhan terhadap peraturan yang berlaku.</p>
+        </section>
+
+        <section id="data-processing">
+            <h2>Data Processing Menu</h2>
+            <div class="menu-grid">
+                <a href="https://olah-data-thc.streamlit.app/" class="no-underline">
+                <div class="menu-item">
+                    <h3>01. THC</h3>
+                    <p>Pengolahan data ini menggunakan bahan THC, Db Simpanan dan Db Pinjaman.</p>
+                </div>
+                </a>
+                
+                <a href="https://tr-anggota-keluar.streamlit.app/" class="no-underline">    
+                <div class="menu-item">
+                    <h3>02. TAK</h3>
+                    <p>Pengolahan data ini menggunakan bahan TAK dan Db Simpanan.</p> 
+                </div>
+
+                </a>
+                <a href="https://tlp-kdp.streamlit.app/" class="no-underline">
+                <div class="menu-item">
+                    <h3>03. TLP & KDP</h3>
+                    <p>Pengolahan data ini menggunakan bahan TLP, KDP dan Db Pinjaman.</p>
+                </div>
+                </a>
+
+                <a href="https://merge-app.streamlit.app/" class="no-underline">
+                <div class="menu-item">    
+                    <h3>04. VLOOK-UP dan N/A</h3>
+                    <p>Pengolahan data ini menggunakan bahan data sebelumnya yang N/A dan sudah dicari secara manual.</p>  
+                </div>
+                </a>
+
+                <a href="https://merge-dbcr.streamlit.app/" class="no-underline">
+                <div class="menu-item">
+                    <h3>05. Merge Simpanan dan Pinjaman</h3>
+                    <p>Pengolahan data ini menggunakan bahan data sebelumnya (Pivot Simpanan dan Pinjaman N/A yang sudah di Vlookup dan disatukan dengan pivot pinjaman).</p>
+                    </div>
+                    </a>
+
+                <a href="https://format-data-thc-gabungan.streamlit.app/" class="no-underline">
+                <div class="menu-item">
+                    <h3>06. Format data thc gabungan</h3>
+                    <p>Pengolahan data ini menggunakan bahan data sebelumnya (THC Final yang gabungan dari Simpanan dan Pinjaman, TLP, dan KDP).</p>
+                </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="pengolahan-anomali">
+            <h2>Pengolahan Anomali</h2>
+            <div class="menu-grid">
+                <a href="https://thc-simpanan.streamlit.app/" class="no-underline">
+                    <div class="menu-item">
+                        <h3>THC Simpanan</h3>
+                        <p>Pengolahan data ini bertujuan untuk memfilter anggota di center yang lebih dari 8 berdasarkan nilai rata-rata dolar transaksi harian.</p>
+                    </div>
+                </a>
+                <a href="https://filter-anggota-lebih-dari-8.streamlit.app/" class="no-underline">
+                    <div class="menu-item">
+                        <h3>Anggota lebih dari 8</h3>
+                        <p>Pengolahan data ini bertujuan untuk memfilter anggota di center yang lebih dari 8 berdasarkan nilai transaksi harian.</p>
+                    </div>
+                </a>
+                <a href="https://filter-prr.streamlit.app/" class="no-underline">
+                    <div class="menu-item">
+                        <h3>Filter Pencairan Renovasi Rumah</h3>
+                        <p>Pengolahan data ini bertujuan untuk mengecek pencairan renovasi rumah, sesuai ketentuan atau tidaknya.</p>
+                    </div>
+                </a>   
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-buttons">
+                <button onclick="openWhatsApp()">WhatsApp 1</button>
+                <button onclick="openWhatsApp2()">WhatsApp 2</button>
+                <button onclick="sendEmail()">E-Mail</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Internal Audit - DVS. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
