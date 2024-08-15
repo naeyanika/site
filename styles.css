@@ -324,7 +324,7 @@ section:last-of-type {
 }
 
 footer {
-    padding: 25px;
+    padding: 35px;
     background-color:#181717;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -571,7 +571,7 @@ footer .copyright {
         align-items: center;
         gap: 2px; 
     }
-
+    
     .logo {
         margin-left: 5px;
     }
