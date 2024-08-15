@@ -380,7 +380,7 @@ footer .button-footer:hover .svgIcon {
   }
 
 footer .button-footer::before {
-    position: absolute;
+    position: fixed;
     bottom: 200;
     content: "Gulir ke Atas";
     color: rgb(49, 49, 49);
