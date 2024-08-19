@@ -497,7 +497,50 @@ footer .copyright {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
   }
+
+ /* App Name */
+.authorized-reseller-api-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 0.625rem 0.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    outline: 0;
+    transition: all 0.8s;
+    text-decoration: none;
+  }
   
+  .authorized-reseller-api-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .authorized-reseller-api-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .texts {
+    margin-left: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  .text-1 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .text-2 {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+
 @media (min-width: 804px) {
 header {
         flex-direction: row;
@@ -639,7 +682,21 @@ nav ul li a:hover::before {
 .button {
         width: 100%;
         justify-content: center;
-    }    
+    }
+.authorized-reseller-api-btn {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+    }
+.texts {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    align-items: center;
+    text-align: center;
+}
+
 }
 
 
