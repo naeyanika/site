@@ -1,8 +1,18 @@
-const menuToggle = document.getElementById('mobile-menu');
-const navUl = document.querySelector('nav ul');
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerInput = document.querySelector('.hamburger input');
+    const navUl = document.querySelector('nav ul');
 
-menuToggle.addEventListener('click', () => {
-    navUl.classList.toggle('active');
+    hamburgerInput.addEventListener('change', function() {
+        if (this.checked) {
+            navUl.style.transform = 'translateY(0)';
+            navUl.style.visibility = 'visible';
+            navUl.style.opacity = '1'
+        } else {
+            navUl.style.transform = 'translateY(-100%)';
+            navUl.style.visibility = 'hidden';
+            navUl.style.opacity = '0'
+        }
+    });
 });
 
 function openWhatsApp() {
