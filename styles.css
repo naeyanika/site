@@ -689,6 +689,7 @@ nav ul li a:hover::before {
     justify-content: center;
     padding: 1rem;
     align-items: center;
+    width: 100%;
     }
 .texts {
     margin-left: 0;
