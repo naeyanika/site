@@ -28,3 +28,12 @@ function sendEmail() {
 }
 
 
+document.querySelectorAll('nav li a').forEach((link) => {
+    link.addEventListener('mouseenter', () => {
+        link.querySelector('.nav-label').classList.add('show');
+    });
+
+    link.addEventListener('mouseleave', () => {
+        link.querySelector('.nav-label').classList.remove('show');
+    });
+});
