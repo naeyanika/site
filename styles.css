@@ -57,9 +57,13 @@
     font-style: normal;
 }
 
-h1, h2, h3 {
-    font-family: 'SF Pro Text', sans-serif;
+@font-face {
+    font-family: 'No-move';
+    src: url('Fonts/No-move.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -130,7 +134,7 @@ header nav ul li a {
 
 
 .logo {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'No-move', sans-serif;
     font-size: 32px;
     color: #fff;
     text-decoration: none;
